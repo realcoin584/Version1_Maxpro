@@ -209,7 +209,7 @@ let MyAmount=[{
 
 //onValue
 setInterval(()=>{
-    if(localStorage.getItem('displayWalletAmount') != MyAmount[0].Amount && localStorage.getItem('Mycode') !=null|| `${document.querySelector('.backupCode').value}`.length===8){
+    if(localStorage.getItem('displayWalletAmount') != MyAmount[0].Amount && localStorage.getItem('Mycode') !=null|| `${document.querySelector('.backupCode').value}`.length===9){
 
         onValue(ref(db,`MyAmount${localStorage.getItem('Mycode')}`),(snapshot)=>{
             MyAmount=[snapshot.val()]
