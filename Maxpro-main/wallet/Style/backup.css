@@ -1,0 +1,284 @@
+.backup_CD_Div{
+    background-color: rgba(0, 0, 0, 0.6);
+    border:none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    z-index: 10;
+    display:none ;
+    
+}
+.backup_CD{
+    background-color: rgb(3, 0, 14);
+    border: none;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 100%;
+    
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    padding: 0px;
+    box-shadow: 0px 0px 5px rgb(0, 30, 255);
+}
+.backup_CD_HI{
+    border:none;
+    width: 300px;
+    height: 25px;
+    margin: auto;
+    margin-top: 5px;
+
+
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+    user-select: none;
+}
+.backup_CD_HII{
+    border:none;
+    width: 300px;
+    height: 25px;
+    margin: auto;
+    margin-top: 10px;
+
+
+    text-align: center;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: rgb(153, 153, 153);
+    padding: 5px;
+    user-select: none;
+    
+}
+.backup_CD_B{
+    background-color: rgba(70, 70, 70, 0.187);
+    border: none;
+    width: 80%;
+    position: relative;
+    
+    margin: 10%;
+    margin-bottom: 1px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    font-size: 12px;
+    color: rgb(153, 153, 153);
+    border-radius: 10px;
+
+    
+}
+
+.backup_CD_BI,.backup_CD_BII{
+    background-color: rgb(0, 0, 44);
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    height: 40px;
+    font-weight: 700;
+    font-size: 15px;
+    color: rgb(235, 235, 235);
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    margin: auto;
+    margin-top: 10px;
+    text-transform: capitalize;
+
+    
+}
+.backup_CD_BII{
+    background-color: rgba(70, 70, 70, 0.187);
+    color: rgb(235, 235, 235);
+    margin-bottom: 10px;
+}
+/**********/
+
+.backupPage_HI{
+    border:none;
+    width: 300px;
+    height: 25px;
+    margin: auto;
+    margin-top: 30px;
+
+
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    user-select: none;
+}
+.backupPage_HII{
+    border:none;
+    max-width: 330px;
+    height: 25px;
+    margin: auto;
+    margin-top: 10px;
+
+
+    text-align: center;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:530;
+    font-size: 15px;
+    color: rgb(101, 101, 101);
+    padding: 5px;
+    user-select: none;
+}
+.backupPage_praseDiv{
+    border: none;
+    max-width: 330px;
+    margin: auto;
+    margin-top: 50px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.prase{
+    border:none;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: rgb(183, 183, 183);
+    padding: 5px;
+    user-select: none;
+}
+.checkBackupButton{
+    background-color: rgb(0, 0, 44);
+    font-family: Arial, Helvetica, sans-serif;
+    width: 250px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    margin: auto;
+    margin-top: 60px;
+}
+
+/***************/
+.backupCheck_CD_Div{
+    background-color: rgb(3, 0, 14);
+    border:none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    z-index: 11;
+    display:none;
+    
+}
+.backupCheck_CD_HI{
+    border:none;
+    width: 300px;
+    height: 25px;
+    margin: auto;
+    margin-top: 30px;
+
+
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    user-select: none;
+}
+.backupCheck_CD_HII{
+    border:none;
+    max-width: 330px;
+    
+    margin: auto;
+    margin-top: 10px;
+
+
+    text-align: center;
+    line-height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:530;
+    font-size: 15px;
+    color: rgb(101, 101, 101);
+    padding: 5px;
+    user-select: none;
+}
+.backupCheck_CD_IDiv_C{
+    border: none;
+    max-width: 300px;
+    max-height: 260px;
+    margin: auto;
+    margin-top: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.backupCheck_CD_IDiv{
+    border:none;
+    max-width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 8px;
+}
+.backupCodeDiv{
+    display: none;
+}
+.backupCheck_CD_I{
+    background-color: rgba(255, 255, 255, 0.069);
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding-left: 40px;
+    color:rgb(211, 211, 211);
+    font-family: Arial, Helvetica, sans-serif;
+    
+    font-size: 16px;
+}
+.backupCheck_CD_I:focus{
+    outline: none;
+    box-shadow: 0px 0px 4px blue;
+}
+
+.backupCheck_CD_IS{
+    border: none;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 10px;
+    top: 15px;
+
+    text-align: center;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 530;
+    font-size: 16px;
+    color: rgb(140, 140, 140);
+    user-select: none;
+}
+.backupCheck_CD_done{
+    background-color: rgb(0, 0, 44);
+    font-family: Arial, Helvetica, sans-serif;
+    width: 300px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    margin: auto;
+    margin-top: 60px;
+}

@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Here are the CSS files for this page-->
+    <link rel="stylesheet" href="Style/general/mainWallet.css">
+    <link rel="stylesheet" href="Style/general/passcode.css">
+    <!-- general_page-->
+
+    <link rel="stylesheet" href="Style/SendPage.css">
+    <link rel="stylesheet" href="Style/ReceivePage.css">
+    <link rel="stylesheet" href="Style/SwapPage.css">
+    <link rel="stylesheet" href="Style/StakePage.css">
+    <link rel="stylesheet" href="Style/settingButton.css">
+    <link rel="stylesheet" href="Style/backup.css">
+    <link rel="stylesheet" href="Style/deleteLogout.css">
+    <link rel="stylesheet" href="Style/firstPages_CD.css">
+    <link rel="stylesheet" href="Style/wallet_CD.css">
+    <link rel="stylesheet" href="Style/connectRrealWithWallet_DC.css">
+    <link rel="stylesheet" href="Style/createAndlogin_DC.css">
+
+    
+    <!-- general_HomePage-->
+    <link rel="stylesheet" href="Style/general_HomePage/HomePage_wallet.css">
+    <link rel="stylesheet" href="Style/general_HomePage/HomePage_history.css">
+    <link rel="stylesheet" href="Style/general_HomePage/HomePage_x2.css">
+
+    
+</head>
+<body>
+    <div class="mainWalletContainer_div">
+        
+        
+        
+
+        
+        <section id="mainWalletContainer_homePage">
+            <div class="mainWalletContainer_homePage">
+                <div class="mainWallet_C_homePage_TCD">
+                    
+                    <section id="mainWallet_C_homePage_TC_WC">
+                        <div class="mainWallet_C_homePage_TC_WC">
+                            <div class="AddWalletDiv" onclick="
+                            document.querySelector('.wallet_CD_Div').style.display='block';
+                            ">
+                                <p class="AddWalletDiv_leftIcon"></p>
+                                wallet
+                                <p class="AddWalletDiv_rightIcon"></p>
+                            </div>
+                            
+                            <a href="#mainWalletContainer_settingButton"><p class="settingButton"></p></a>
+                            <div class="totalAmountAndId">
+                                <p class="totalAmount">&#36 5000</p>
+                                <p class="userID">UQDz...max</p>
+                            </div>
+                            <div class="SRSSBS_containerDiv">
+
+                                <a href="#mainWalletContainer_sendPage">
+                                    <div class="SRSSBS_container removeTopBorder removeLeftBorder">
+                                        <p class="SRSSBS_containerIcon sendIcon"></p>
+                                        <p class="SRSSBS_containerName">send</p>
+                                    </div>
+                                </a>
+                                <a href="#mainWalletContainer_receivePage">
+                                    <div class="SRSSBS_container removeTopBorder">
+                                        <p class="SRSSBS_containerIcon receiveIcon"></p>
+                                        <p class="SRSSBS_containerName">receive</p>
+                                    </div>
+                                </a>
+                                <a href="#mainWalletContainer_sendPage">
+                                    <div class="SRSSBS_container removeTopBorder">
+                                        <p class="SRSSBS_containerIcon scanIcon"></p>
+                                        <p class="SRSSBS_containerName">code</p>
+                                    </div>
+                                </a>
+                                <a href="#mainWalletContainer_swapPage">
+                                    <div class="SRSSBS_container removeLeftBorder">
+                                        <p class="SRSSBS_containerIcon swapIcon"></p>
+                                        <p class="SRSSBS_containerName">currency</p>
+                                    </div>
+                                </a>
+                                <a href="#mainWallet_C_homePage_TC_BC">
+                                    <div class="SRSSBS_container">
+                                        <p class="SRSSBS_containerIcon buySellIcon"></p>
+                                        <p class="SRSSBS_containerName">buy & Sell</p>
+                                    </div>
+                                </a>
+                                <a href="#mainWallet_C_homePage_TC_HC">
+                                    <div class="SRSSBS_container">
+                                        <p class="SRSSBS_containerIcon stakeIcon"></p>
+                                        <p class="SRSSBS_containerName">transaction</p>
+                                    </div>
+                                </a>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                            </div>
+                            <p class="finishSettingUp_Header">Finish setting up</p>
+
+                            
+                            <div class="backUpPhrase_containerDiv" onclick="
+                            document.querySelector('.backup_CD_Div').style.display='block';
+                            ">
+                                <p class="backUpPhrase_container_leftIcon"></p>
+                                <p class="backUpPhrase_container_text">
+                                    Back Up the wallet recovery phrase
+                                </p>
+                                <p class="backUpPhrase_container_rightIcon"></p>
+                            </div>
+                            
+                            
+                        </div>
+                    </section>
+                    <section id="mainWallet_C_homePage_TC_HC">
+                        <div class="mainWallet_C_homePage_TC_HC">
+                            <div class="pageHeader">
+                                transactions
+                            </div>
+
+                            
+
+                            
+                            <div class="receiveSend_mainContainerDiv">
+                                <div class="historyNone_container">
+                                
+                                    <p class="historyNone_containerHeaderText1">
+                                        Your history <br> will be shown here
+                                    </p>
+                                    <p class="historyNone_containerHeaderText2">
+                                        Make your first transaction!
+                                    </p>
+    
+                                    <div class="historyNone_containerSendReceive">
+    
+                                        <a href="#mainWalletContainer_sendPage">
+                                            <p class="historyNone_containerSend">
+                                                Send
+                                            </p>
+                                        </a>
+                                        <a href="#mainWalletContainer_receivePage">
+                                            <p class="historyNone_containerReceive">
+                                                Receive
+                                            </p>
+                                        </a>
+    
+                                    </div>
+    
+                                </div>
+
+
+                                
+
+                            </div>
+
+                        </div>
+                    </section>
+                    <section id="mainWallet_C_homePage_TC_BC">
+                        <div class="mainWallet_C_homePage_TC_BC">
+                            <div class="realCoins_mainContainer_x2">
+                                <p class="realCoins_mainContainer_x2TotalDoller">&#36 24.90</p>
+            
+                                <div class="realCoins_mainContainer_x2TopDiv">
+                                    <div class="realCoins_mainContainer_x2BottomContainer tapswap_ContainerSell">
+                                        <div class="realCoins_mainContainer_x2BottomContainerLeft">
+                                            <p class="x2BottomContainerLeft_Img tapswap_ImgSell"></p>
+                                            <p class="x2BottomContainerLeft_Name">tapswap</p>
+                                            <div class="x2BottomContainerLeft_NoAmount">
+                                                <p class="x2BottomContainerLeft_No">52,300</p>
+                                                <p class="x2BottomContainerLeft_Amount tapswap_AmountSell">&#36 5.67</p>
+                                            </div>
+                                            <p class="x2BottomContainerLeft_sell" data-id="tapswap">sell</p>
+                                        </div>
+                                        <div class="realCoins_mainContainer_x2BottomContainerright">
+                                            <p class="x2BottomContainerright_stick tapswap_stickSell"></p>
+                                            <p class="x2BottomContainerright_stickRead tapswap_stickReadSell"></p>
+                                        </div>
+                                    </div>
+                                    <div class="realCoins_mainContainer_x2BottomContainer hamsterkonbat_ContainerSell">
+                                        <div class="realCoins_mainContainer_x2BottomContainerLeft">
+                                            <p class="x2BottomContainerLeft_Img hamsterkonbat_ImgSell"></p>
+                                            <p class="x2BottomContainerLeft_Name">hamster konbat</p>
+                                            <div class="x2BottomContainerLeft_NoAmount">
+                                                <p class="x2BottomContainerLeft_No">79,600</p>
+                                                <p class="x2BottomContainerLeft_Amount hamsterkonbat_AmountSell">&#36 5.67</p>
+                                            </div>
+                                            <p class="x2BottomContainerLeft_sell" data-id="hamsterkonbat">sell</p>
+                                        </div>
+                                        <div class="realCoins_mainContainer_x2BottomContainerright">
+                                            <p class="x2BottomContainerright_stick hamsterkonbat_stickSell"></p>
+                                            <p class="x2BottomContainerright_stickRead hamsterkonbat_stickReadSell"></p>
+                                        </div>
+                                    </div>
+                                    <div class="realCoins_mainContainer_x2BottomContainer aquaprotocol_ContainerSell">
+                                        <div class="realCoins_mainContainer_x2BottomContainerLeft">
+                                            <p class="x2BottomContainerLeft_Img aquaprotocol_ImgSell"></p>
+                                            <p class="x2BottomContainerLeft_Name">aqua protocol</p>
+                                            <div class="x2BottomContainerLeft_NoAmount">
+                                                <p class="x2BottomContainerLeft_No">8,200</p>
+                                                <p class="x2BottomContainerLeft_Amount aquaprotocol_AmountSell">&#36 5.67</p>
+                                            </div>
+                                            <p class="x2BottomContainerLeft_sell" data-id="aquaprotocol">sell</p>
+                                        </div>
+                                        <div class="realCoins_mainContainer_x2BottomContainerright">
+                                            <p class="x2BottomContainerright_stick aquaprotocol_stickSell"></p>
+                                            <p class="x2BottomContainerright_stickRead aquaprotocol_stickReadSell"></p>
+                                        </div>
+                                    </div>
+                                    <div class="realCoins_mainContainer_x2BottomContainer blum_ContainerSell">
+                                        <div class="realCoins_mainContainer_x2BottomContainerLeft">
+                                            <p class="x2BottomContainerLeft_Img blum_ImgSell"></p>
+                                            <p class="x2BottomContainerLeft_Name">blum</p>
+                                            <div class="x2BottomContainerLeft_NoAmount">
+                                                <p class="x2BottomContainerLeft_No">12,000</p>
+                                                <p class="x2BottomContainerLeft_Amount blum_AmountSell">&#36 5.67</p>
+                                            </div>
+                                            <p class="x2BottomContainerLeft_sell" data-id="blum">sell</p>
+                                        </div>
+                                        <div class="realCoins_mainContainer_x2BottomContainerright">
+                                            <p class="x2BottomContainerright_stick blum_stickSell"></p>
+                                            <p class="x2BottomContainerright_stickRead blum_stickReadSell"></p>
+                                        </div>
+                                    </div>
+                                    <div class="realCoins_mainContainer_x2BottomContainer memefi_ContainerSell">
+                                        <div class="realCoins_mainContainer_x2BottomContainerLeft">
+                                            <p class="x2BottomContainerLeft_Img memefi_ImgSell"></p>
+                                            <p class="x2BottomContainerLeft_Name">memefi</p>
+                                            <div class="x2BottomContainerLeft_NoAmount">
+                                                <p class="x2BottomContainerLeft_No">11,400</p>
+                                                <p class="x2BottomContainerLeft_Amount memefi_AmountSell">&#36 5.67</p>
+                                            </div>
+                                            <p class="x2BottomContainerLeft_sell" data-id="memefi">sell</p>
+                                        </div>
+                                        <div class="realCoins_mainContainer_x2BottomContainerright">
+                                            <p class="x2BottomContainerright_stick memefi_stickSell"></p>
+                                            <p class="x2BottomContainerright_stickRead memefi_stickReadSell"></p>
+                                        </div>
+                                    </div>
+                                    <div class="realCoins_mainContainer_x2BottomContainer gemzcoin_ContainerSell">
+                                        <div class="realCoins_mainContainer_x2BottomContainerLeft">
+                                            <p class="x2BottomContainerLeft_Img gemzcoin_ImgSell"></p>
+                                            <p class="x2BottomContainerLeft_Name">gemz coin</p>
+                                            <div class="x2BottomContainerLeft_NoAmount">
+                                                <p class="x2BottomContainerLeft_No">23,900</p>
+                                                <p class="x2BottomContainerLeft_Amount gemzcoin_AmountSell">&#36 5.67</p>
+                                            </div>
+                                            <p class="x2BottomContainerLeft_sell" data-id="gemzcoin">sell</p>
+                                        </div>
+                                        <div class="realCoins_mainContainer_x2BottomContainerright">
+                                            <p class="x2BottomContainerright_stick gemzcoin_stickSell"></p>
+                                            <p class="x2BottomContainerright_stickRead gemzcoin_stickReadSell"></p>
+                                        </div>
+                                    </div>
+                                    <div class="realCoins_mainContainer_x2BottomContainer loscoin_ContainerSell">
+                                        <div class="realCoins_mainContainer_x2BottomContainerLeft">
+                                            <p class="x2BottomContainerLeft_Img loscoin_ImgSell"></p>
+                                            <p class="x2BottomContainerLeft_Name">los coin</p>
+                                            <div class="x2BottomContainerLeft_NoAmount">
+                                                <p class="x2BottomContainerLeft_No">10,100</p>
+                                                <p class="x2BottomContainerLeft_Amount loscoin_AmountSell">&#36 5.67</p>
+                                            </div>
+                                            <p class="x2BottomContainerLeft_sell" data-id="loscoin">sell</p>
+                                        </div>
+                                        <div class="realCoins_mainContainer_x2BottomContainerright">
+                                            <p class="x2BottomContainerright_stick loscoin_stickSell"></p>
+                                            <p class="x2BottomContainerright_stickRead loscoin_stickReadSell"></p>
+                                        </div>
+                                    </div>
+                                    <div class="realCoins_mainContainer_x2BottomContainer notcoin_ContainerSell">
+                                        <div class="realCoins_mainContainer_x2BottomContainerLeft">
+                                            <p class="x2BottomContainerLeft_Img notcoin_ImgSell"></p>
+                                            <p class="x2BottomContainerLeft_Name">not coin</p>
+                                            <div class="x2BottomContainerLeft_NoAmount">
+                                                <p class="x2BottomContainerLeft_No">120</p>
+                                                <p class="x2BottomContainerLeft_Amount notcoin_AmountSell">&#36 5.67</p>
+                                            </div>
+                                            <p class="x2BottomContainerLeft_sell" data-id="notcoin">sell</p>
+                                        </div>
+                                        <div class="realCoins_mainContainer_x2BottomContainerright">
+                                            <p class="x2BottomContainerright_stick notcoin_stickSell"></p>
+                                            <p class="x2BottomContainerright_stickRead notcoin_stickReadSell"></p>
+                                        </div>
+                                    </div>
+                                    <div class="realCoins_mainContainer_x2BottomContainer tigernetwork_ContainerSell">
+                                        <div class="realCoins_mainContainer_x2BottomContainerLeft">
+                                            <p class="x2BottomContainerLeft_Img tigernetwork_ImgSell"></p>
+                                            <p class="x2BottomContainerLeft_Name">tiger network</p>
+                                            <div class="x2BottomContainerLeft_NoAmount">
+                                                <p class="x2BottomContainerLeft_No">3,400</p>
+                                                <p class="x2BottomContainerLeft_Amount tigernetwork_AmountSell">&#36 5.67</p>
+                                            </div>
+                                            <p class="x2BottomContainerLeft_sell" data-id="tigernetwork">sell</p>
+                                        </div>
+                                        <div class="realCoins_mainContainer_x2BottomContainerright">
+                                            <p class="x2BottomContainerright_stick tigernetwork_stickSell"></p>
+                                            <p class="x2BottomContainerright_stickRead tigernetwork_stickReadSell"></p>
+                                        </div>
+                                    </div>
+                                    <div class="realCoins_mainContainer_x2BottomContainer simpletap_ContainerSell">
+                                        <div class="realCoins_mainContainer_x2BottomContainerLeft">
+                                            <p class="x2BottomContainerLeft_Img simpletap_ImgSell"></p>
+                                            <p class="x2BottomContainerLeft_Name">simple tap</p>
+                                            <div class="x2BottomContainerLeft_NoAmount">
+                                                <p class="x2BottomContainerLeft_No">670</p>
+                                                <p class="x2BottomContainerLeft_Amount simpletap_AmountSell">&#36 5.67</p>
+                                            </div>
+                                            <p class="x2BottomContainerLeft_sell" data-id="simpletap">sell</p>
+                                        </div>
+                                        <div class="realCoins_mainContainer_x2BottomContainerright">
+                                            <p class="x2BottomContainerright_stick simpletap_stickSell"></p>
+                                            <p class="x2BottomContainerright_stickRead simpletap_stickReadSell"></p>
+                                        </div>
+                                    </div>
+                                    <div class="realCoins_mainContainer_x2BottomContainer kolo_ContainerSell">
+                                        <div class="realCoins_mainContainer_x2BottomContainerLeft">
+                                            <p class="x2BottomContainerLeft_Img kolo_ImgSell"></p>
+                                            <p class="x2BottomContainerLeft_Name">kolo</p>
+                                            <div class="x2BottomContainerLeft_NoAmount">
+                                                <p class="x2BottomContainerLeft_No">11,930</p>
+                                                <p class="x2BottomContainerLeft_Amount kolo_AmountSell">&#36 5.67</p>
+                                            </div>
+                                            <p class="x2BottomContainerLeft_sell" data-id="kolo">sell</p>
+                                        </div>
+                                        <div class="realCoins_mainContainer_x2BottomContainerright">
+                                            <p class="x2BottomContainerright_stick kolo_stickSell"></p>
+                                            <p class="x2BottomContainerright_stickRead kolo_stickReadSell"></p>
+                                        </div>
+                                    </div>
+                                    <div class="realCoins_mainContainer_x2BottomContainer cashcoingame_ContainerSell">
+                                        <div class="realCoins_mainContainer_x2BottomContainerLeft">
+                                            <p class="x2BottomContainerLeft_Img cashcoingame_ImgSell"></p>
+                                            <p class="x2BottomContainerLeft_Name">cash coingame</p>
+                                            <div class="x2BottomContainerLeft_NoAmount">
+                                                <p class="x2BottomContainerLeft_No">540</p>
+                                                <p class="x2BottomContainerLeft_Amount cashcoingame_AmountSell">&#36 5.67</p>
+                                            </div>
+                                            <p class="x2BottomContainerLeft_sell" data-id="cashcoingame">sell</p>
+                                        </div>
+                                        <div class="realCoins_mainContainer_x2BottomContainerright">
+                                            <p class="x2BottomContainerright_stick cashcoingame_stickSell"></p>
+                                            <p class="x2BottomContainerright_stickRead cashcoingame_stickReadSell"></p>
+                                        </div>
+                                    </div>
+                                    <div class="realCoins_mainContainer_x2BottomContainer dotcoin_ContainerSell">
+                                        <div class="realCoins_mainContainer_x2BottomContainerLeft">
+                                            <p class="x2BottomContainerLeft_Img dotcoin_ImgSell"></p>
+                                            <p class="x2BottomContainerLeft_Name">dot coin</p>
+                                            <div class="x2BottomContainerLeft_NoAmount">
+                                                <p class="x2BottomContainerLeft_No">2,300</p>
+                                                <p class="x2BottomContainerLeft_Amount dotcoin_AmountSell">&#36 5.67</p>
+                                            </div>
+                                            <p class="x2BottomContainerLeft_sell" data-id="dotcoin">sell</p>
+                                        </div>
+                                        <div class="realCoins_mainContainer_x2BottomContainerright">
+                                            <p class="x2BottomContainerright_stick dotcoin_stickSell"></p>
+                                            <p class="x2BottomContainerright_stickRead dotcoin_stickReadSell"></p>
+                                        </div>
+                                    </div>
+                                    <div class="realCoins_mainContainer_x2BottomContainer bbqcoin_ContainerSell">
+                                        <div class="realCoins_mainContainer_x2BottomContainerLeft">
+                                            <p class="x2BottomContainerLeft_Img bbqcoin_ImgSell"></p>
+                                            <p class="x2BottomContainerLeft_Name">bbq coin</p>
+                                            <div class="x2BottomContainerLeft_NoAmount">
+                                                <p class="x2BottomContainerLeft_No">290</p>
+                                                <p class="x2BottomContainerLeft_Amount bbqcoin_AmountSell">&#36 5.67</p>
+                                            </div>
+                                            <p class="x2BottomContainerLeft_sell" data-id="bbqcoin">sell</p>
+                                        </div>
+                                        <div class="realCoins_mainContainer_x2BottomContainerright">
+                                            <p class="x2BottomContainerright_stick bbqcoin_stickSell"></p>
+                                            <p class="x2BottomContainerright_stickRead bbqcoin_stickReadSell"></p>
+                                        </div>
+                                    </div>
+                                    <div class="realCoins_mainContainer_x2BottomContainer cexoi_ContainerSell">
+                                        <div class="realCoins_mainContainer_x2BottomContainerLeft">
+                                            <p class="x2BottomContainerLeft_Img cexoi_ImgSell"></p>
+                                            <p class="x2BottomContainerLeft_Name">cexoi</p>
+                                            <div class="x2BottomContainerLeft_NoAmount">
+                                                <p class="x2BottomContainerLeft_No">980</p>
+                                                <p class="x2BottomContainerLeft_Amount cexoi_AmountSell">&#36 5.67</p>
+                                            </div>
+                                            <p class="x2BottomContainerLeft_sell" data-id="cexoi">sell</p>
+                                        </div>
+                                        <div class="realCoins_mainContainer_x2BottomContainerright">
+                                            <p class="x2BottomContainerright_stick cexoi_stickSell"></p>
+                                            <p class="x2BottomContainerright_stickRead cexoi_stickReadSell"></p>
+                                        </div>
+                                    </div>
+                                    <div class="realCoins_mainContainer_x2BottomContainer seedcoin_ContainerSell">
+                                        <div class="realCoins_mainContainer_x2BottomContainerLeft">
+                                            <p class="x2BottomContainerLeft_Img seedcoin_ImgSell"></p>
+                                            <p class="x2BottomContainerLeft_Name">seed coin</p>
+                                            <div class="x2BottomContainerLeft_NoAmount">
+                                                <p class="x2BottomContainerLeft_No">34,100</p>
+                                                <p class="x2BottomContainerLeft_Amount seedcoin_AmountSell">&#36 5.67</p>
+                                            </div>
+                                            <p class="x2BottomContainerLeft_sell" data-id="seedcoin">sell</p>
+                                        </div>
+                                        <div class="realCoins_mainContainer_x2BottomContainerright">
+                                            <p class="x2BottomContainerright_stick seedcoin_stickSell"></p>
+                                            <p class="x2BottomContainerright_stickRead seedcoin_stickReadSell"></p>
+                                        </div>
+                                    </div>
+                                    <div class="realCoins_mainContainer_x2BottomContainer pocketrocket_ContainerSell">
+                                        <div class="realCoins_mainContainer_x2BottomContainerLeft">
+                                            <p class="x2BottomContainerLeft_Img pocketrocket_ImgSell"></p>
+                                            <p class="x2BottomContainerLeft_Name">pocket rocket</p>
+                                            <div class="x2BottomContainerLeft_NoAmount">
+                                                <p class="x2BottomContainerLeft_No">840</p>
+                                                <p class="x2BottomContainerLeft_Amount pocketrocket_AmountSell">&#36 5.67</p>
+                                            </div>
+                                            <p class="x2BottomContainerLeft_sell" data-id="pocketrocket">sell</p>
+                                        </div>
+                                        <div class="realCoins_mainContainer_x2BottomContainerright">
+                                            <p class="x2BottomContainerright_stick pocketrocket_stickSell"></p>
+                                            <p class="x2BottomContainerright_stickRead pocketrocket_stickReadSell"></p>
+                                        </div>
+                                    </div>
+                                    <div class="realCoins_mainContainer_x2BottomContainer yescoin_ContainerSell">
+                                        <div class="realCoins_mainContainer_x2BottomContainerLeft">
+                                            <p class="x2BottomContainerLeft_Img yescoin_ImgSell"></p>
+                                            <p class="x2BottomContainerLeft_Name">yes coin</p>
+                                            <div class="x2BottomContainerLeft_NoAmount">
+                                                <p class="x2BottomContainerLeft_No">1,500</p>
+                                                <p class="x2BottomContainerLeft_Amount yescoin_AmountSell">&#36 5.67</p>
+                                            </div>
+                                            <p class="x2BottomContainerLeft_sell" data-id="yescoin">sell</p>
+                                        </div>
+                                        <div class="realCoins_mainContainer_x2BottomContainerright">
+                                            <p class="x2BottomContainerright_stick yescoin_stickSell"></p>
+                                            <p class="x2BottomContainerright_stickRead yescoin_stickReadSell"></p>
+                                        </div>
+                                    </div>
+                                    <div class="realCoins_mainContainer_x2BottomContainer avagoldcoin_ContainerSell">
+                                        <div class="realCoins_mainContainer_x2BottomContainerLeft">
+                                            <p class="x2BottomContainerLeft_Img avagoldcoin_ImgSell"></p>
+                                            <p class="x2BottomContainerLeft_Name">avagold coin</p>
+                                            <div class="x2BottomContainerLeft_NoAmount">
+                                                <p class="x2BottomContainerLeft_No">1,460</p>
+                                                <p class="x2BottomContainerLeft_Amount avagoldcoin_AmountSell">&#36 5.67</p>
+                                            </div>
+                                            <p class="x2BottomContainerLeft_sell" data-id="avagoldcoin">sell</p>
+                                        </div>
+                                        <div class="realCoins_mainContainer_x2BottomContainerright">
+                                            <p class="x2BottomContainerright_stick avagoldcoin_stickSell"></p>
+                                            <p class="x2BottomContainerright_stickRead avagoldcoin_stickReadSell"></p>
+                                        </div>
+                                    </div>
+                                    
+                                    
+            
+                                    
+            
+                                </div>
+                                <p class="coinsMarket">coins market</p>
+                                <div class="realCoins_mainContainer_x2BottomDiv">
+                                    
+                                    <div class="realCoins_mainContainer_x2BottomContainer tapswap_ContainerBuy">
+                                        <div class="realCoins_mainContainer_x2BottomContainerLeft">
+                                            <p class="x2BottomContainerLeft_Img tapswap_ImgBuy"></p>
+                                            <p class="x2BottomContainerLeft_Name">tapswap</p>
+                                            <div class="x2BottomContainerLeft_NoAmount">
+                                                <p class="x2BottomContainerLeft_No">52,300</p>
+                                                <p class="x2BottomContainerLeft_Amount tapswap_AmountBuy">&#36 5.67</p>
+                                            </div>
+                                            <p class="x2BottomContainerLeft_buy" data-id="tapswap">buy</p>
+                                        </div>
+                                        <div class="realCoins_mainContainer_x2BottomContainerright">
+                                            <p class="x2BottomContainerright_stick tapswap_stickBuy"></p>
+                                            <p class="x2BottomContainerright_stickRead tapswap_stickReadBuy"></p>
+                                        </div>
+                                    </div>
+                                    <div class="realCoins_mainContainer_x2BottomContainer hamsterkonbat_ContainerBuy">
+                                        <div class="realCoins_mainContainer_x2BottomContainerLeft">
+                                            <p class="x2BottomContainerLeft_Img hamsterkonbat_ImgBuy"></p>
+                                            <p class="x2BottomContainerLeft_Name">hamster konbat</p>
+                                            <div class="x2BottomContainerLeft_NoAmount">
+                                                <p class="x2BottomContainerLeft_No">79,600</p>
+                                                <p class="x2BottomContainerLeft_Amount hamsterkonbat_AmountBuy">&#36 5.67</p>
+                                            </div>
+                                            <p class="x2BottomContainerLeft_buy" data-id="hamsterkonbat">buy</p>
+                                        </div>
+                                        <div class="realCoins_mainContainer_x2BottomContainerright">
+                                            <p class="x2BottomContainerright_stick hamsterkonbat_stickBuy"></p>
+                                            <p class="x2BottomContainerright_stickRead hamsterkonbat_stickReadBuy"></p>
+                                        </div>
+                                    </div>
+                                    <div class="realCoins_mainContainer_x2BottomContainer aquaprotocol_ContainerBuy">
+                                        <div class="realCoins_mainContainer_x2BottomContainerLeft">
+                                            <p class="x2BottomContainerLeft_Img aquaprotocol_ImgBuy"></p>
+                                            <p class="x2BottomContainerLeft_Name">aqua protocol</p>
+                                            <div class="x2BottomContainerLeft_NoAmount">
+                                                <p class="x2BottomContainerLeft_No">8,200</p>
+                                                <p class="x2BottomContainerLeft_Amount aquaprotocol_AmountBuy">&#36 5.67</p>
+                                            </div>
+                                            <p class="x2BottomContainerLeft_buy" data-id="aquaprotocol">buy</p>
+                                        </div>
+                                        <div class="realCoins_mainContainer_x2BottomContainerright">
+                                            <p class="x2BottomContainerright_stick aquaprotocol_stickBuy"></p>
+                                            <p class="x2BottomContainerright_stickRead aquaprotocol_stickReadBuy"></p>
+                                        </div>
+                                    </div>
+                                    <div class="realCoins_mainContainer_x2BottomContainer blum_ContainerBuy">
+                                        <div class="realCoins_mainContainer_x2BottomContainerLeft">
+                                            <p class="x2BottomContainerLeft_Img blum_ImgBuy"></p>
+                                            <p class="x2BottomContainerLeft_Name">blum</p>
+                                            <div class="x2BottomContainerLeft_NoAmount">
+                                                <p class="x2BottomContainerLeft_No">12,000</p>
+                                                <p class="x2BottomContainerLeft_Amount blum_AmountBuy">&#36 5.67</p>
+                                            </div>
+                                            <p class="x2BottomContainerLeft_buy" data-id="blum">buy</p>
+                                        </div>
+                                        <div class="realCoins_mainContainer_x2BottomContainerright">
+                                            <p class="x2BottomContainerright_stick blum_stickBuy"></p>
+                                            <p class="x2BottomContainerright_stickRead blum_stickReadBuy"></p>
+                                        </div>
+                                    </div>
+                                    <div class="realCoins_mainContainer_x2BottomContainer memefi_ContainerBuy">
+                                        <div class="realCoins_mainContainer_x2BottomContainerLeft">
+                                            <p class="x2BottomContainerLeft_Img memefi_ImgBuy"></p>
+                                            <p class="x2BottomContainerLeft_Name">memefi</p>
+                                            <div class="x2BottomContainerLeft_NoAmount">
+                                                <p class="x2BottomContainerLeft_No">11,400</p>
+                                                <p class="x2BottomContainerLeft_Amount memefi_AmountBuy">&#36 5.67</p>
+                                            </div>
+                                            <p class="x2BottomContainerLeft_buy" data-id="memefi">buy</p>
+                                        </div>
+                                        <div class="realCoins_mainContainer_x2BottomContainerright">
+                                            <p class="x2BottomContainerright_stick memefi_stickBuy"></p>
+                                            <p class="x2BottomContainerright_stickRead memefi_stickReadBuy"></p>
+                                        </div>
+                                    </div>
+                                    <div class="realCoins_mainContainer_x2BottomContainer gemzcoin_ContainerBuy">
+                                        <div class="realCoins_mainContainer_x2BottomContainerLeft">
+                                            <p class="x2BottomContainerLeft_Img gemzcoin_ImgBuy"></p>
+                                            <p class="x2BottomContainerLeft_Name">gemz coin</p>
+                                            <div class="x2BottomContainerLeft_NoAmount">
+                                                <p class="x2BottomContainerLeft_No">23,900</p>
+                                                <p class="x2BottomContainerLeft_Amount gemzcoin_AmountBuy">&#36 5.67</p>
+                                            </div>
+                                            <p class="x2BottomContainerLeft_buy" data-id="gemzcoin">buy</p>
+                                        </div>
+                                        <div class="realCoins_mainContainer_x2BottomContainerright">
+                                            <p class="x2BottomContainerright_stick gemzcoin_stickBuy"></p>
+                                            <p class="x2BottomContainerright_stickRead gemzcoin_stickReadBuy"></p>
+                                        </div>
+                                    </div>
+                                    <div class="realCoins_mainContainer_x2BottomContainer loscoin_ContainerBuy">
+                                        <div class="realCoins_mainContainer_x2BottomContainerLeft">
+                                            <p class="x2BottomContainerLeft_Img loscoin_ImgBuy"></p>
+                                            <p class="x2BottomContainerLeft_Name">los coin</p>
+                                            <div class="x2BottomContainerLeft_NoAmount">
+                                                <p class="x2BottomContainerLeft_No">10,100</p>
+                                                <p class="x2BottomContainerLeft_Amount loscoin_AmountBuy">&#36 5.67</p>
+                                            </div>
+                                            <p class="x2BottomContainerLeft_buy" data-id="loscoin">buy</p>
+                                        </div>
+                                        <div class="realCoins_mainContainer_x2BottomContainerright">
+                                            <p class="x2BottomContainerright_stick loscoin_stickBuy"></p>
+                                            <p class="x2BottomContainerright_stickRead loscoin_stickReadBuy"></p>
+                                        </div>
+                                    </div>
+                                    <div class="realCoins_mainContainer_x2BottomContainer notcoin_ContainerBuy">
+                                        <div class="realCoins_mainContainer_x2BottomContainerLeft">
+                                            <p class="x2BottomContainerLeft_Img notcoin_ImgBuy"></p>
+                                            <p class="x2BottomContainerLeft_Name">not coin</p>
+                                            <div class="x2BottomContainerLeft_NoAmount">
+                                                <p class="x2BottomContainerLeft_No">120</p>
+                                                <p class="x2BottomContainerLeft_Amount notcoin_AmountBuy">&#36 5.67</p>
+                                            </div>
+                                            <p class="x2BottomContainerLeft_buy" data-id="notcoin">buy</p>
+                                        </div>
+                                        <div class="realCoins_mainContainer_x2BottomContainerright">
+                                            <p class="x2BottomContainerright_stick notcoin_stickBuy"></p>
+                                            <p class="x2BottomContainerright_stickRead notcoin_stickReadBuy"></p>
+                                        </div>
+                                    </div>
+                                    <div class="realCoins_mainContainer_x2BottomContainer tigernetwork_ContainerBuy">
+                                        <div class="realCoins_mainContainer_x2BottomContainerLeft">
+                                            <p class="x2BottomContainerLeft_Img tigernetwork_ImgBuy"></p>
+                                            <p class="x2BottomContainerLeft_Name">tiger network</p>
+                                            <div class="x2BottomContainerLeft_NoAmount">
+                                                <p class="x2BottomContainerLeft_No">3,400</p>
+                                                <p class="x2BottomContainerLeft_Amount tigernetwork_AmountBuy">&#36 5.67</p>
+                                            </div>
+                                            <p class="x2BottomContainerLeft_buy" data-id="tigernetwork">buy</p>
+                                        </div>
+                                        <div class="realCoins_mainContainer_x2BottomContainerright">
+                                            <p class="x2BottomContainerright_stick tigernetwork_stickBuy"></p>
+                                            <p class="x2BottomContainerright_stickRead tigernetwork_stickReadBuy"></p>
+                                        </div>
+                                    </div>
+                                    <div class="realCoins_mainContainer_x2BottomContainer simpletap_ContainerBuy">
+                                        <div class="realCoins_mainContainer_x2BottomContainerLeft">
+                                            <p class="x2BottomContainerLeft_Img simpletap_ImgBuy"></p>
+                                            <p class="x2BottomContainerLeft_Name">simple tap</p>
+                                            <div class="x2BottomContainerLeft_NoAmount">
+                                                <p class="x2BottomContainerLeft_No">670</p>
+                                                <p class="x2BottomContainerLeft_Amount simpletap_AmountBuy">&#36 5.67</p>
+                                            </div>
+                                            <p class="x2BottomContainerLeft_buy" data-id="simpletap">buy</p>
+                                        </div>
+                                        <div class="realCoins_mainContainer_x2BottomContainerright">
+                                            <p class="x2BottomContainerright_stick simpletap_stickBuy"></p>
+                                            <p class="x2BottomContainerright_stickRead simpletap_stickReadBuy"></p>
+                                        </div>
+                                    </div>
+                                    <div class="realCoins_mainContainer_x2BottomContainer kolo_ContainerBuy">
+                                        <div class="realCoins_mainContainer_x2BottomContainerLeft">
+                                            <p class="x2BottomContainerLeft_Img kolo_ImgBuy"></p>
+                                            <p class="x2BottomContainerLeft_Name">kolo</p>
+                                            <div class="x2BottomContainerLeft_NoAmount">
+                                                <p class="x2BottomContainerLeft_No">11,930</p>
+                                                <p class="x2BottomContainerLeft_Amount kolo_AmountBuy">&#36 5.67</p>
+                                            </div>
+                                            <p class="x2BottomContainerLeft_buy" data-id="kolo">buy</p>
+                                        </div>
+                                        <div class="realCoins_mainContainer_x2BottomContainerright">
+                                            <p class="x2BottomContainerright_stick kolo_stickBuy"></p>
+                                            <p class="x2BottomContainerright_stickRead kolo_stickReadBuy"></p>
+                                        </div>
+                                    </div>
+                                    <div class="realCoins_mainContainer_x2BottomContainer cashcoingame_ContainerBuy">
+                                        <div class="realCoins_mainContainer_x2BottomContainerLeft">
+                                            <p class="x2BottomContainerLeft_Img cashcoingame_ImgBuy"></p>
+                                            <p class="x2BottomContainerLeft_Name">cash coingame</p>
+                                            <div class="x2BottomContainerLeft_NoAmount">
+                                                <p class="x2BottomContainerLeft_No">540</p>
+                                                <p class="x2BottomContainerLeft_Amount cashcoingame_AmountBuy">&#36 5.67</p>
+                                            </div>
+                                            <p class="x2BottomContainerLeft_buy" data-id="cashcoingame">buy</p>
+                                        </div>
+                                        <div class="realCoins_mainContainer_x2BottomContainerright">
+                                            <p class="x2BottomContainerright_stick cashcoingame_stickBuy"></p>
+                                            <p class="x2BottomContainerright_stickRead cashcoingame_stickReadBuy"></p>
+                                        </div>
+                                    </div>
+                                    <div class="realCoins_mainContainer_x2BottomContainer dotcoin_ContainerBuy">
+                                        <div class="realCoins_mainContainer_x2BottomContainerLeft">
+                                            <p class="x2BottomContainerLeft_Img dotcoin_ImgBuy"></p>
+                                            <p class="x2BottomContainerLeft_Name">dot coin</p>
+                                            <div class="x2BottomContainerLeft_NoAmount">
+                                                <p class="x2BottomContainerLeft_No">2,300</p>
+                                                <p class="x2BottomContainerLeft_Amount dotcoin_AmountBuy">&#36 5.67</p>
+                                            </div>
+                                            <p class="x2BottomContainerLeft_buy" data-id="dotcoin">buy</p>
+                                        </div>
+                                        <div class="realCoins_mainContainer_x2BottomContainerright">
+                                            <p class="x2BottomContainerright_stick dotcoin_stickBuy"></p>
+                                            <p class="x2BottomContainerright_stickRead dotcoin_stickReadBuy"></p>
+                                        </div>
+                                    </div>
+                                    <div class="realCoins_mainContainer_x2BottomContainer bbqcoin_ContainerBuy">
+                                        <div class="realCoins_mainContainer_x2BottomContainerLeft">
+                                            <p class="x2BottomContainerLeft_Img bbqcoin_ImgBuy"></p>
+                                            <p class="x2BottomContainerLeft_Name">bbq coin</p>
+                                            <div class="x2BottomContainerLeft_NoAmount">
+                                                <p class="x2BottomContainerLeft_No">290</p>
+                                                <p class="x2BottomContainerLeft_Amount bbqcoin_AmountBuy">&#36 5.67</p>
+                                            </div>
+                                            <p class="x2BottomContainerLeft_buy" data-id="bbqcoin">buy</p>
+                                        </div>
+                                        <div class="realCoins_mainContainer_x2BottomContainerright">
+                                            <p class="x2BottomContainerright_stick bbqcoin_stickBuy"></p>
+                                            <p class="x2BottomContainerright_stickRead bbqcoin_stickReadBuy"></p>
+                                        </div>
+                                    </div>
+                                    <div class="realCoins_mainContainer_x2BottomContainer cexoi_ContainerBuy">
+                                        <div class="realCoins_mainContainer_x2BottomContainerLeft">
+                                            <p class="x2BottomContainerLeft_Img cexoi_ImgBuy"></p>
+                                            <p class="x2BottomContainerLeft_Name">cexoi</p>
+                                            <div class="x2BottomContainerLeft_NoAmount">
+                                                <p class="x2BottomContainerLeft_No">980</p>
+                                                <p class="x2BottomContainerLeft_Amount cexoi_AmountBuy">&#36 5.67</p>
+                                            </div>
+                                            <p class="x2BottomContainerLeft_buy" data-id="cexoi">buy</p>
+                                        </div>
+                                        <div class="realCoins_mainContainer_x2BottomContainerright">
+                                            <p class="x2BottomContainerright_stick cexoi_stickBuy"></p>
+                                            <p class="x2BottomContainerright_stickRead cexoi_stickReadBuy"></p>
+                                        </div>
+                                    </div>
+                                    <div class="realCoins_mainContainer_x2BottomContainer seedcoin_ContainerBuy">
+                                        <div class="realCoins_mainContainer_x2BottomContainerLeft">
+                                            <p class="x2BottomContainerLeft_Img seedcoin_ImgBuy"></p>
+                                            <p class="x2BottomContainerLeft_Name">seed coin</p>
+                                            <div class="x2BottomContainerLeft_NoAmount">
+                                                <p class="x2BottomContainerLeft_No">34,100</p>
+                                                <p class="x2BottomContainerLeft_Amount seedcoin_AmountBuy">&#36 5.67</p>
+                                            </div>
+                                            <p class="x2BottomContainerLeft_buy" data-id="seedcoin">buy</p>
+                                        </div>
+                                        <div class="realCoins_mainContainer_x2BottomContainerright">
+                                            <p class="x2BottomContainerright_stick seedcoin_stickBuy"></p>
+                                            <p class="x2BottomContainerright_stickRead seedcoin_stickReadBuy"></p>
+                                        </div>
+                                    </div>
+                                    <div class="realCoins_mainContainer_x2BottomContainer pocketrocket_ContainerBuy">
+                                        <div class="realCoins_mainContainer_x2BottomContainerLeft">
+                                            <p class="x2BottomContainerLeft_Img pocketrocket_ImgBuy"></p>
+                                            <p class="x2BottomContainerLeft_Name">pocket rocket</p>
+                                            <div class="x2BottomContainerLeft_NoAmount">
+                                                <p class="x2BottomContainerLeft_No">840</p>
+                                                <p class="x2BottomContainerLeft_Amount pocketrocket_AmountBuy">&#36 5.67</p>
+                                            </div>
+                                            <p class="x2BottomContainerLeft_buy" data-id="pocketrocket">buy</p>
+                                        </div>
+                                        <div class="realCoins_mainContainer_x2BottomContainerright">
+                                            <p class="x2BottomContainerright_stick pocketrocket_stickBuy"></p>
+                                            <p class="x2BottomContainerright_stickRead pocketrocket_stickReadBuy"></p>
+                                        </div>
+                                    </div>
+                                    <div class="realCoins_mainContainer_x2BottomContainer yescoin_ContainerBuy">
+                                        <div class="realCoins_mainContainer_x2BottomContainerLeft">
+                                            <p class="x2BottomContainerLeft_Img yescoin_ImgBuy"></p>
+                                            <p class="x2BottomContainerLeft_Name">yes coin</p>
+                                            <div class="x2BottomContainerLeft_NoAmount">
+                                                <p class="x2BottomContainerLeft_No">1,500</p>
+                                                <p class="x2BottomContainerLeft_Amount yescoin_AmountBuy">&#36 5.67</p>
+                                            </div>
+                                            <p class="x2BottomContainerLeft_buy" data-id="yescoin">buy</p>
+                                        </div>
+                                        <div class="realCoins_mainContainer_x2BottomContainerright">
+                                            <p class="x2BottomContainerright_stick yescoin_stickBuy"></p>
+                                            <p class="x2BottomContainerright_stickRead yescoin_stickReadBuy"></p>
+                                        </div>
+                                    </div>
+                                    <div class="realCoins_mainContainer_x2BottomContainer avagoldcoin_ContainerBuy">
+                                        <div class="realCoins_mainContainer_x2BottomContainerLeft">
+                                            <p class="x2BottomContainerLeft_Img avagoldcoin_ImgBuy"></p>
+                                            <p class="x2BottomContainerLeft_Name">avagold coin</p>
+                                            <div class="x2BottomContainerLeft_NoAmount">
+                                                <p class="x2BottomContainerLeft_No">1,460</p>
+                                                <p class="x2BottomContainerLeft_Amount avagoldcoin_AmountBuy">&#36 5.67</p>
+                                            </div>
+                                            <p class="x2BottomContainerLeft_buy" data-id="avagoldcoin">buy</p>
+                                        </div>
+                                        <div class="realCoins_mainContainer_x2BottomContainerright">
+                                            <p class="x2BottomContainerright_stick avagoldcoin_stickBuy"></p>
+                                            <p class="x2BottomContainerright_stickRead avagoldcoin_stickReadBuy"></p>
+                                        </div>
+                                    </div>
+            
+            
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                
+                
+    
+                <div class="mainWallet_C_homePage_BCD">
+                    
+                    <a href="#mainWallet_C_homePage_TC_WC">
+                        <div class="mainWallet_C_homePage_BCD_D">
+                            <p class="mainWallet_C_homePage_BC_WI"></p>
+                            <p class="mainWallet_C_homePage_BCD_WN">wallet</p>
+                        </div>
+                    </a>
+                    <a href="#mainWallet_C_homePage_TC_HC">
+                        <div class="mainWallet_C_homePage_BCD_D">
+                            <p class="mainWallet_C_homePage_BC_HI"></p>
+                            <p class="mainWallet_C_homePage_BC_HN">history</p>
+                        </div>
+                    </a>
+                    <a href="#mainWallet_C_homePage_TC_BC">
+                        <div class="mainWallet_C_homePage_BCD_D">
+                            <p class="mainWallet_C_homePage_BC_BI"></p>
+                            <p class="mainWallet_C_homePage_BC_BN">trade</p>
+                        </div>
+                    </a>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="mainWalletContainer_sendPage">
+            <div class="mainWalletContainer_sendPage">
+
+                <section id="mainWalletContainer_sendPageI">
+                    <div class="mainWalletContainer_sendPageI">
+                        <div class="pageHeader">
+                            <a href="#mainWalletContainer_homePage"><p class="backToHomeLeft"></p></a>
+                            
+                            Recipient 
+                        </div>
+        
+                        
+                        
+                        <div class="sentPage_InputDiv">
+                            <input type="text" class="Inputcode" placeholder="Address or code">
+                            <span class="codeLogo"></span>
+                            
+                        </div>
+
+                        <div class="sentPage_selectWalletDiv">
+                            
+                            <div class="sentPage_selectWalletDiv_D">
+                                <p class="sentPage_selectWalletDiv_CLeft moreIcon_I"></p>
+                                <p class="sentPage_selectWalletDiv_CRight">Maxpro</p>
+                            </div>
+                            <p class="selectWallet_arrowLeft"></p>
+
+                            <div class="commingsoonTop_div">
+                                Ensure to initiate transactions from Maxpro to Maxpro exclusively prior to our forthcoming wallet upgrade
+                            </div>
+                            <div class="sentPage_selectWalletDiv_DC">
+
+                                <div class="sentPage_selectWalletDiv_C">
+                                    <p class="sentPage_selectWalletDiv_CLeft moreIcon_I"></p>
+                                    <p class="sentPage_selectWalletDiv_CRight">Maxpro</p>
+                                </div>
+                                <div class="sentPage_selectWalletDiv_C">
+                                    <p class="sentPage_selectWalletDiv_CLeft moreIcon_II"></p>
+                                    <p class="sentPage_selectWalletDiv_CRight">Tonkeeper</p>
+                                </div>
+                                <div class="sentPage_selectWalletDiv_C">
+                                    <p class="sentPage_selectWalletDiv_CLeft moreIcon_III"></p>
+                                    <p class="sentPage_selectWalletDiv_CRight">Tunhub</p>
+                                </div>
+                                <div class="sentPage_selectWalletDiv_C">
+                                    <p class="sentPage_selectWalletDiv_CLeft moreIcon_IV"></p>
+                                    <p class="sentPage_selectWalletDiv_CRight">MyTonWallet</p>
+                                </div>
+                                <div class="sentPage_selectWalletDiv_Cmore">
+                                    <div class="sentPage_selectWalletDiv_more">more 
+                                        <p class="sentPage_selectWalletDiv_moreIcon"></p>
+                                    </div>
+                                    
+                                    
+                                </div>
+                                
+                            </div>
+
+                            
+                        </div>
+                        
+                        <div class="sentPage_InputCommentDiv">
+                            <input type="text" class="Inputcomment" placeholder="Comment">
+                        </div>
+                        <a href="#mainWalletContainer_sendPageII">
+                            <div class="sentPage_Button">continue</div>
+                        </a>
+                        
+                        
+
+                    </div>
+                </section>
+                <section id="mainWalletContainer_sendPageII">
+                    <div class="mainWalletContainer_sendPageII">
+                        <div class="pageHeader">
+                            <a href="#mainWalletContainer_homePage"><p class="backToHomeRight"></p></a>
+                            <a href="#mainWalletContainer_sendPageI"><p class="toBackPage"></p></a>
+                            Amount <br>  <span class="Haader_address">To: osghe73...max</span>
+                        </div>
+
+                        <div class="transactionAmount_CD">
+                            <div class="transactionAmount_CD_ID">
+                                <input type="number" class="transactionAmount_CD_I">
+                                <span class="inputAdd"></span>
+                            </div>
+                            
+                            <div class="transactionAmount_CD_DA">0.00 EUR</div>
+
+                        </div>
+                        <div class="transactionAmount_CD_maxD">
+                            <p class="transactionAmount_CD_maxD_left">MAX</p>
+                            <p class="transactionAmount_CD_maxD_right">Available: 2,000 USD</p>
+                        </div>
+                        
+                        
+                        <div class="transactionAmount_button">continue</div>
+                        
+                        
+                        <!--transaction_SD-->
+                        <div class="transaction_SD_Div">
+                            <div class="transaction_SD_C">
+                                <p class="transaction_SD_Icon"></p>
+                                
+
+                                <p class="transaction_SD_HI">Confirm transaction!</p>
+
+                                <div class="transaction_SD_informationDiv">
+                                    <p class="transaction_SD_AmountLeft">Amount sent</p>
+                                    <p class="transaction_SD_AmountRight">&#36 2300</p>
+
+                                    <p class="transaction_SD_RecipientLeft">Recipient code/address</p>
+                                    <p class="transaction_SD_RecipientRight">OShfw...max</p>
+
+                                    <p class="transaction_SD_WalletLeft">Wallet name</p>
+                                    <p class="transaction_SD_WalletRight">Maxpro</p>
+                                </div>
+
+                                <div class="transaction_SD_button">
+                                    <p class="transaction_SD_cancel">cancel</p>
+                                    <p class="transaction_SD_confirm">confirm</p>
+
+                                    <p class="transaction_SD_done">Done</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                
+                
+
+                
+            </div>
+        </section>
+        <section id="mainWalletContainer_receivePage">
+            <div class="mainWalletContainer_receivePage">
+
+                <a href="#mainWalletContainer_homePage"><p class="backToHomeLeft"></p></a>
+
+
+                <div class="receivePaymentContainer">
+                    <p class="receivePaymentContainer_H1">
+                        receive payment
+                    </p>
+                    <p class="receivePaymentContainer_H2">
+                        Send to others that are using maxpro only before we launch the wallet and add more update. <br> <span class="code">code</span> / <span class="address">address</span>     
+                    </p>
+                    <div class="receivePaymentContainer_AddressCodeDiv">
+                    
+                        <div class="receivePaymentContainer_codeDiv">
+                            <span class="codeI">6</span>
+                            <span class="codeII">8</span>
+                            <span class="codeIII">2</span>
+                            <span class="codeIV">2</span>
+                            <span class="codeV">9</span>
+                            <span class="codeVI">9</span>
+                            <span class="codeVII">0</span>
+                            <span class="codeVIII">0</span>
+                            <span class="codeIX">9</span>
+                        </div> 
+                    </div>
+                    
+                    <p class="copyButton">copy</p>
+                </div>
+
+
+            </div>
+        </section>
+        <section id="mainWalletContainer_swapPage">
+            <div class="mainWalletContainer_swapPage">
+
+                
+                <div class="pageHeader">
+                    <a href="#mainWalletContainer_homePage"><p class="toBackPage"></p></a>
+                    primary currency
+                </div>
+
+                <div class="swapPage_containerDiv">
+
+                    <div class="swapPage_container" data-id-prefix="USD" data-id-sign="&#36">
+                        <p class="swapPage_containerLeft">USD</p>
+                        <p class="swapPage_containerright">united states dollar</p>
+                        <p class="swapPageSign swapPageSignI"></p>
+                    </div>
+                
+                    <div class="swapPage_container" data-id-prefix="EUR" data-id-sign="&#8364">
+                        <p class="swapPage_containerLeft">EUR</p>
+                        <p class="swapPage_containerright">Euro</p>
+                        <p class="swapPageSign swapPageSignII"></p>
+                    </div>
+                
+                    <div class="swapPage_container" data-id-prefix="GBP" data-id-sign="&#163">
+                        <p class="swapPage_containerLeft">GBP</p>
+                        <p class="swapPage_containerright">british pound sterling</p>
+                        <p class="swapPageSign swapPageSignIII"></p>
+                    </div>
+                
+                    <div class="swapPage_container" data-id-prefix="NGN" data-id-sign="&#8358">
+                        <p class="swapPage_containerLeft">NGN</p>
+                        <p class="swapPage_containerright">nigerian naira</p>
+                        <p class="swapPageSign swapPageSignIV"></p>
+                    </div>
+                
+                    <div class="swapPage_container" data-id-prefix="JPY" data-id-sign="&#165">
+                        <p class="swapPage_containerLeft">JPY</p>
+                        <p class="swapPage_containerright">japanese yen</p>
+                        <p class="swapPageSign swapPageSignV"></p>
+                    </div>
+                
+                    <div class="swapPage_container" data-id-prefix="CNT" data-id-sign="&#162">
+                        <p class="swapPage_containerLeft">CNT</p>
+                        <p class="swapPage_containerright">cent</p>
+                        <p class="swapPageSign swapPageSignVI"></p>
+                    </div>
+                
+                    <div class="swapPage_container" data-id-prefix="RS" data-id-sign="&#8377">
+                        <p class="swapPage_containerLeft">RS</p>
+                        <p class="swapPage_containerright">indian rupee</p>
+                        <p class="swapPageSign swapPageSignVII"></p>
+                    </div>
+                
+                    <div class="swapPage_container" data-id-prefix="BTC" data-id-sign="฿">
+                        <p class="swapPage_containerLeft">BTC</p>
+                        <p class="swapPage_containerright">bitcoin</p>
+                        <p class="swapPageSign swapPageSignVIII"></p>
+                    </div>
+                
+
+                </div>
+                
+
+
+            </div>
+        </section>
+        <section id="mainWalletContainer_settingButton">
+            <div class="mainWalletContainer_settingButton">
+
+                <div class="pageHeader">
+                    <a href="#mainWalletContainer_homePage"><p class="backToHomeLeft"></p></a>
+                    settings
+                </div>
+                
+
+                <div class="SettingContainerDiv">
+                    <div class="SettingContainer" onclick="
+                    document.querySelector('.backup_CD_Div').style.display='block';
+                    ">
+                        backup
+                        <p class="SettingContainer_leftIcon backupIcon"></p>
+                    </div>
+                    
+                    <a href="#mainWalletContainer_swapPage">
+                        <div class="SettingContainer" >
+                            currency
+                            <p class="SettingContainer_leftIcon currencyName">usde</p>
+                        </div>
+                    </a>
+                    <div class="SettingContainer" onclick="
+                    document.querySelector('.backupCheck_CD_Div').style.display='block';
+                    document.querySelector('.passcode_containerDiv').style.display='block';
+                    backup_check()
+                    sessionStorage.setItem('changePasscode','')
+                    ">
+                        Change passcode
+                        <p class="SettingContainer_leftIcon securityIcon"></p>
+                    </div>
+                    
+                    <a href="#mainWalletContainer_homePage">
+                        <div class="SettingContainer deleteAccount_B">
+                            delete account
+                            <p class="SettingContainer_leftIcon deleteAccountIcon"></p>
+                        </div>
+                    </a>
+                    
+                    <a href="https://t.me/Maxpro_wallet">
+                    <div class="SettingContainer borderBottomNone">
+                        maxpro news
+                        <p class="SettingContainer_leftIcon maxproIcon"></p>
+                    </div>
+                    </a>
+                </div>
+                
+                <a href="#mainWalletContainer_homePage">
+                    <div class="signOutWallet signOut_B">
+                        sign out wallet
+                        <p class="SettingContainer_leftIcon signOutIcon"></p>
+                    </div>
+                </a>
+                
+                
+                <div class="settingBottomDiv">
+                    <p class="settingBottomDiv_Icon"></p>
+                    <p class="settingBottomDiv_Name">maxpro</p>
+                    <p class="settingBottomDiv_version">version 4.8.0</p>
+                </div>
+
+                
+            </div>
+        </section>
+        <section id="mainWalletContainer_backupPage">
+            <div class="mainWalletContainer_backupPage">
+                <a href="#mainWalletContainer_homePage"><p class="backToHomeLeft"></p></a>
+                <p class="backupPage_HI">Recovery Phrase</p>
+                <p class="backupPage_HII">write down these words with their numbers and store them in safe place.</p>
+
+                <div class="backupPage_praseDiv">
+                    <p class="prase praseI">1. load</p>
+                    <p class="prase praseII">2. start</p>
+                    <p class="prase praseIII">3. word</p>
+                    <p class="prase praseIV">4. cook</p>
+                    <p class="prase praseV">5. click</p>
+                    <p class="prase praseVI">6. note</p>
+                    <p class="prase praseVII">7. word</p>
+                    <p class="prase praseVIII">8. cook</p>
+                    <p class="prase praseIX">9. click</p>
+                    <p class="prase praseX">10. note</p>
+
+                    <p class="prase praseXI">1. load</p>
+                    <p class="prase praseXII">2. start</p>
+                    <p class="prase praseXIII">3. word</p>
+                    <p class="prase praseXIV">4. cook</p>
+                    <p class="prase praseXV">5. click</p>
+                    <p class="prase praseXVI">6. note</p>
+                    <p class="prase praseXVII">7. word</p>
+                    <p class="prase praseXVIII">8. cook</p>
+                    <p class="prase praseXIX">9. click</p>
+                    <p class="prase praseXX">10. note</p>
+                </div>
+
+                <p class="checkBackupButton">Check Backup</p>
+
+            </div>
+        </section>
+        
+        
+
+        <div class="passcode_containerDiv">
+            <div class="passcode_container">
+                <p class="passcode_HeaderI">Create new passcode</p>
+                <div class="passcode_bothInputDiv">
+
+                    <p class="passcode_Input inputI"></p>
+                    <p class="passcode_Input inputII"></p>
+                    <p class="passcode_Input inputIII"></p>
+                    <p class="passcode_Input inputIV"></p>
+                </div>
+                <p class="passcode_HeaderII">Forgot passcode PIN?</p>
+
+                <div class="passcode_keyboardTopDiv">
+                    <p class="passcode_keyboardTopDiv_Icon"></p>
+                    maxpro secure numeric keypad
+                </div>
+                <div class="passcode_keyboardDiv">
+                    <p class="key" data-id="1">1</p>
+                    <p class="key" data-id="2">2</p>
+                    <p class="key" data-id="3">3</p>
+                    <p class="key" data-id="4">4</p>
+                    <p class="key" data-id="5">5</p>
+                    <p class="key" data-id="6">6</p>
+                    <p class="key" data-id="7">7</p>
+                    <p class="key" data-id="8">8</p>
+                    <p class="key" data-id="9">9</p>
+                </div>
+                <div class="passcode_keyboardBottonDiv">
+                    <p class="key" data-id="0">0</p>
+                    <div class="key" data-id="<">
+                        <p class="backKeyIcon"></p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="backup_CD_Div">
+            <div class="backup_CD">
+
+                
+                <a href="#mainWalletContainer_homePage"><p class="backToHomeRight" onclick="
+                    document.querySelector('.backup_CD_Div').style.display='none';
+                "></p></a>
+                    
+
+                <div class="backup_CD_HI">Attention</div>
+                <div class="backup_CD_HII">
+                    please read the following carefully before viewing your recovery phrase.
+                </div>
+                <div class="backup_CD_B">
+                    Never enter your recovery phrase any other place than Maxpro to access your wallet and then Maxpro support never asks for a recovery phrase notice that Everybody with your recovery phrase can access your wallet.
+                </div>
+
+                <a href="#mainWalletContainer_backupPage">
+                    <p class="backup_CD_BI" onclick="
+                    document.querySelector('.backup_CD_Div').style.display='none';
+                    document.querySelector('.passcode_containerDiv').style.display='block';
+                    ">continue</p>
+                </a>
+                
+                <p class="backup_CD_BII" onclick="
+                document.querySelector('.backup_CD_Div').style.display='none';
+                ">cancel</p>
+            </div>
+        </div>
+        
+        <div class="backupCheck_CD_Div">
+            <p class="toBackPage toBackPage_BC" onclick="
+            document.querySelector('.backupCheck_CD_Div').style.display='none';
+            "></p>
+            <div class="backupCheck_CD_HI">Backup Check</div>
+                <div class="backupCheck_CD_HII">
+                    Let's see if you've got everything right. <br>
+                    Enter words 10,20, and 21.
+                </div>
+                
+
+                <div class="backupCheck_CD_IDiv_C">
+                    <div class="backupCheck_CD_IDiv backupCodeDiv">
+                        <input type="text" class="backupCheck_CD_I backupCode" placeholder="Enter your code">
+                    </div>
+                    <div class="backupCheck_CD_IDiv">
+                        <span class="backupCheck_CD_IS backupInputI_N">10:</span>
+                        <input type="text" class="backupCheck_CD_I backupInputI">
+                    </div>
+                    <div class="backupCheck_CD_IDiv">
+                        <span class="backupCheck_CD_IS backupInputII_N">20:</span>
+                        <input type="text" class="backupCheck_CD_I backupInputII">
+                    </div>
+                    <div class="backupCheck_CD_IDiv">
+                        <span class="backupCheck_CD_IS backupInputIII_N">21:</span>
+                        <input type="text" class="backupCheck_CD_I backupInputIII">
+                    </div>
+                </div>
+                <p class="backupCheck_CD_done">Done</p>
+        </div>
+    
+        <div class="signOut_deleteAccount_CD_Div">
+            <div class="signOut_deleteAccount_CD_loddingSign_D">
+                <p class="signOut_deleteAccount_CD_loddingSign_Icon"></p>
+            </div>
+
+            <div class="signOut_deleteAccount_CD">
+                
+                <p class="backToHomeRight" onclick="
+                    document.querySelector('.signOut_deleteAccount_CD_Div').style.display='none';
+                    "></p>
+                <p class="signOut_deleteAccount_C_HI">delete wallet data</p>
+                <p class="signOut_deleteAccount_C_HII">Wallet keys and all personal data will be erased from this device.</p>
+                <div class="signOut_deleteAccount_C_D">
+                    <div class="signOut_deleteAccount_C_DLeft">
+                        <p class="signOut_deleteAccount_C_DLeftIcon"></p>
+                    </div>
+                    <div class="signOut_deleteAccount_C_DRight">
+                        <p class="signOut_deleteAccount_C_DRight_top">I have a backup copy of recovery phrase for Wallet</p>
+                        <p class="signOut_deleteAccount_C_DRight_bottom">Back up</p>
+                    </div>
+                </div>
+                <div class="deleteButton">delete wallet data</div>
+            </div>
+        </div>
+
+        <div class="firstPage_ContainerI">
+            <div class="firstPage_ContainerI_ID">
+                <p class="firstPage_ContainerI_I"></p>
+            </div>
+        </div>
+
+        <div class="firstPage_ContainerII">
+            <div class="firstPage_ContainerII_header">
+                leave the desktop. <br>
+                mobile gaming rocks!
+            </div>
+            <div class="firstPage_ContainerII_QR_code"></div>
+        </div>
+
+        <div class="wallet_CD_Div">
+            
+            <div class="wallet_CD">
+                <div class="pageHeader">
+                    <p class="backToHomeRight" onclick="
+                        document.querySelector('.wallet_CD_Div').style.display='none';
+                    "></p>
+                    Wallet
+                </div>
+
+                <div class="wallet_CD_C" onclick="
+                document.querySelector('.wallet_CD_Div').style.display='none';
+                ">
+                    <p class="wallet_CD_CLeft"></p>
+                    <div class="wallet_CD_CRight">
+                        <p class="wallet_CD_CRight_top">wallet</p>
+                        <p class="wallet_CD_CRight_bottom">$ 0</p>
+                        <p class="wallet_CD_CRight_Icon"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="copeid_Div">
+            <p class="copeid_p">copied</p>
+        </div>
+
+
+
+
+
+        <div class="connectRrealWithWallet_DC">
+
+            <div class="connectRrealWithWallet_D">
+
+                <div class="connectRrealWithWallet_logoD">
+                    <p class="connectRrealWithWallet_logoD_left"></p>
+                    <div class="connectRrealWithWallet_logoD_middle">
+
+                        <p class="connectRrealWithWallet_logoD_middleLeft">MSOUNE</p>
+                        <p class="connectRrealWithWallet_logoD_middleRight">******</p>
+                        
+                    </div>
+                    <p class="connectRrealWithWallet_logoD_right"></p>
+                </div>
+    
+                <p class="connectRrealWithWallet_CR">
+                    Connect to 
+                    <span class="connectRrealWithWallet_CRS">RealCoin.ai</span>?
+                </p>
+    
+                <p class="connectRrealWithWallet_RIRA">
+                    RealCoin is requesting access <br> to your wallet address 
+                    <span class="connectRrealWithWallet_RIRA_S">UQnm...max</span>
+                </p>
+
+                <div class="EN_B">
+                    Enable notifications
+                    <p class="EN_B_C"></p>
+                </div>
+
+                <div class="CW_B">Connect wallet</div>
+                
+
+                <p class="BST">
+                    Be sure to check the service address <br> before connecting the wallet
+                </p>
+
+                
+                <p class="done"></p>
+    
+
+            </div>
+
+        </div>
+
+
+        <div class="createAndlogin_DC">
+            <p class="createAndlogin_DC_Logo"></p>
+
+            <p class="createAndlogin_DC_T">Maxpro</p>
+            <p class="createAndlogin_DC_CAN">Create a new wallet or add <br> an existing one</p>
+
+            <div class="createAndlogin_DC_CNW">Create New Wallet</div>
+            <div class="createAndlogin_DC_IEW">Import Existing Wallet</div>
+        </div>
+        
+        <div class="displayMessage">insufficient balance</div>
+
+    </div>
+</body>
+<script src="Javascript/mainWallet.js"></script>
+<script src="Javascript/fixed_Icons.js"></script>
+<script src="Javascript/DailyChange.js"></script>
+<script type="module" src="Javascript/Transaction.js"></script>
+
+
+
+
+<!--
+
+
+
+-->
+
+</html>
+
+
+

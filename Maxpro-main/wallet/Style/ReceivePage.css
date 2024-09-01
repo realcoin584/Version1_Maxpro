@@ -1,0 +1,104 @@
+.receivePaymentContainer{
+    border:none;
+    max-width: 310px;
+    height: 200px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.receivePaymentContainer_H1{
+    border: none;
+    border:none;
+    max-width: 300px;
+    height: 40px;
+    
+    text-align: center;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    font-size: 25px;
+    color: rgb(234, 234, 234);
+}
+.receivePaymentContainer_H2{
+    border:none;
+    max-width: 300px;
+    height: 90px;
+    
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: rgb(98, 98, 98);
+    line-height: 20px;
+}
+.code,.address{
+    color: rgb(0, 0, 109);
+    font-weight: 600;
+    font-size: 15px;
+}
+.code:active,.address:active{
+    color: rgb(124, 0, 0);
+}
+.receivePaymentContainer_AddressCodeDiv{
+    background-color: rgb(0, 0, 44);
+    border-radius: 10px;
+    max-width: 300px;
+    margin: auto;
+
+    text-align: center;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: rgb(213, 213, 213);
+    padding-top: 10px;
+    padding: 10px;
+}
+.receivePaymentContainer_codeDiv{
+    border:none;
+    max-width: 300px;
+    height: 40px;
+    margin: auto;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   
+    
+}
+.codeI,.codeII,.codeIII,.codeIV,.codeV,.codeVI,.codeVII,.codeVIII,.codeIX{
+    background-color:transparent;
+    border: none;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    margin-left: 4px;
+}
+
+.copyButton{
+    background-color: rgb(0, 0, 44);
+    border-radius: 10px;
+    width: 60px;
+    height: 30px;
+
+    text-align: center;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    font-size: 18px;
+    padding: 4px;
+    color: rgb(159, 159, 159);
+
+    position: absolute;
+    bottom: -50px;
+}
