@@ -2726,7 +2726,7 @@ setInterval(()=>{
     }
 
 
-    if(`${document.querySelector('.backupCode').value}`.length===8){
+    if(`${document.querySelector('.backupCode').value}`.length===9){
         localStorage.setItem('Mycode',document.querySelector('.backupCode').value)
     }
     
