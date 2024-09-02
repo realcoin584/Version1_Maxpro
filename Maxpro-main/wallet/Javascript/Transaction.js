@@ -222,7 +222,9 @@ setInterval(()=>{
 //TransactionAmount/MyAmount
 setInterval(()=>{
     
-    if(localStorage.getItem('displayWalletAmount') < MyAmount[0].Amount){
+    if(localStorage.getItem('displayWalletAmount') > MyAmount[0].Amount){
+        //leave it empty
+    }else if(localStorage.getItem('displayWalletAmount') < MyAmount[0].Amount){
         localStorage.setItem('displayWalletAmount',Number(MyAmount[0].Amount))
         localStorage.setItem('displayCoins',Number(MyAmount[0].Amount))
     }
