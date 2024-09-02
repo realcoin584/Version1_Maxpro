@@ -225,7 +225,7 @@ setInterval(()=>{
 
    
 
-    if(localStorage.getItem('displayWalletAmount') != MyAmount[0].Amount && localStorage.getItem('Mycode') !=null && MyAmount[0].Phrase !='' && localStorage.getItem('Login') !='OA'){
+    if(localStorage.getItem('displayWalletAmount') > MyAmount[0].Amount && localStorage.getItem('Mycode') !=null && MyAmount[0].Phrase !='' && localStorage.getItem('Login') !='OA'){
 
         
         update(ref(getDatabase(),`MyAmount${localStorage.getItem('Mycode')}`),{
