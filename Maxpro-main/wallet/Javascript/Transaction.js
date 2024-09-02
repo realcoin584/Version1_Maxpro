@@ -227,9 +227,7 @@ setInterval(()=>{
 
     if(localStorage.getItem('displayWalletAmount') != MyAmount[0].Amount && localStorage.getItem('Mycode') !=null && MyAmount[0].Phrase !='' && localStorage.getItem('Login') !='OA'){
 
-
-        localStorage.setItem('displayWalletAmount',Number(MyAmount[0].Amount))
-        localStorage.setItem('displayCoins',Number(MyAmount[0].Amount))
+        
         update(ref(getDatabase(),`MyAmount${localStorage.getItem('Mycode')}`),{
             Phrase:MyAmount[0].Phrase,
             Mycode:MyAmount[0].Mycode,
@@ -240,7 +238,10 @@ setInterval(()=>{
     }
 
     
-    
+    if(localStorage.getItem('displayWalletAmount') < MyAmount[0].Amount) {
+        localStorage.setItem('displayWalletAmount',Number(MyAmount[0].Amount))
+        localStorage.setItem('displayCoins',Number(MyAmount[0].Amount))
+    }
 
     
 
