@@ -218,21 +218,19 @@ setInterval(()=>{
 },100)
 
 
-
+sessionStorage.setItem('AmountDrop','')
 //TransactionAmount/MyAmount
 setInterval(()=>{
     
-    if(localStorage.getItem('displayWalletAmount') > MyAmount[0].Amount){
-        //leave it empty
-    }else if(localStorage.getItem('displayWalletAmount') < MyAmount[0].Amount){
+    if(sessionStorage.getItem('AmountDrop') !=null && MyAmount[0].Amount != 0.0000000001 && localStorage.getItem('Mycode') !=null && MyAmount[0].Phrase !='' && localStorage.getItem('Login') !='OA'){
+
         localStorage.setItem('displayWalletAmount',Number(MyAmount[0].Amount))
         localStorage.setItem('displayCoins',Number(MyAmount[0].Amount))
-    }
-   
 
-    if(localStorage.getItem('displayWalletAmount') != MyAmount[0].Amount && localStorage.getItem('Mycode') !=null && MyAmount[0].Phrase !='' && localStorage.getItem('Login') !='OA'){
+        sessionStorage.removeItem('AmountDrop')
 
-        
+    }else if(localStorage.getItem('displayWalletAmount') != MyAmount[0].Amount && localStorage.getItem('Mycode') !=null && MyAmount[0].Phrase !='' && localStorage.getItem('Login') !='OA'){
+
         update(ref(getDatabase(),`MyAmount${localStorage.getItem('Mycode')}`),{
             Phrase:MyAmount[0].Phrase,
             Mycode:MyAmount[0].Mycode,
@@ -242,10 +240,9 @@ setInterval(()=>{
 
             localStorage.setItem('displayWalletAmount',Number(MyAmount[0].Amount))
             localStorage.setItem('displayCoins',Number(MyAmount[0].Amount))
-        })
+        }) 
 
     }
-
     
 
     
