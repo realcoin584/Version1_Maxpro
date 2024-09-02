@@ -323,7 +323,7 @@ setInterval(()=>{
 
 
 
-},2000)
+},200)
 
 
 
@@ -335,7 +335,7 @@ setInterval(()=>{
         localStorage.setItem('displayWalletAmount',Number(MyAmount[0].Amount))
         localStorage.setItem('displayCoins',Number(MyAmount[0].Amount))
     }
-},4000)
+},100)
 
 
 
