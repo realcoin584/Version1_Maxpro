@@ -167,6 +167,9 @@
     align-items: center;
     border-radius: 4px;
 }
+.sentPage_selectWalletDiv_D{
+    height: 50px;
+}
 .sentPage_selectWalletDiv_C:active{
     background-color: rgb(0, 0, 43);
 }
