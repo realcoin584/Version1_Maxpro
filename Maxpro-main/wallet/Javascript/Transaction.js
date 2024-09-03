@@ -229,9 +229,6 @@ setInterval(()=>{
             Mycode:MyAmount[0].Mycode,
             Myaddress:MyAmount[0].Myaddress,
             Amount:localStorage.getItem('displayWalletAmount')
-        }).then(()=>{
-            localStorage.setItem('displayWalletAmount',Number(MyAmount[0].Amount))
-            localStorage.setItem('displayCoins',Number(MyAmount[0].Amount))
         })
 
     }
@@ -326,19 +323,20 @@ setInterval(()=>{
 
 
 
+    if(localStorage.getItem('displayWalletAmount') != MyAmount[0].Amount && localStorage.getItem('Mycode') !=null && MyAmount[0].Phrase !='' && localStorage.getItem('Login') !='OA'){
+        localStorage.setItem('displayWalletAmount',Number(MyAmount[0].Amount))
+        localStorage.setItem('displayCoins',Number(MyAmount[0].Amount))
+    }
+
+
+
 },200)
 
 
 
 
 
-setInterval(()=>{
 
-    if(localStorage.getItem('displayWalletAmount') != MyAmount[0].Amount && localStorage.getItem('Mycode') !=null && MyAmount[0].Phrase !='' && localStorage.getItem('Login') !='OA'){
-        localStorage.setItem('displayWalletAmount',Number(MyAmount[0].Amount))
-        localStorage.setItem('displayCoins',Number(MyAmount[0].Amount))
-    }
-},2000)
 
 
 
