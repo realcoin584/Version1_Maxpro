@@ -102,7 +102,6 @@ setInterval(()=>{
             set(ref(getDatabase(),'MyAmount'+`${localStorage.getItem('Mycode')}`),{
                 Phrase:Bothprase,
                 Mycode:localStorage.getItem('Mycode'),
-                Myaddress:localStorage.getItem('Myaddress'),
                 Amount:0.0000000001
             })
 
@@ -162,7 +161,6 @@ if(localStorage.getItem('newDataBase')===null){
     set(ref(getDatabase(),'MyAmount'+`${localStorage.getItem('Mycode')}`),{
         Phrase:Bothprase,
         Mycode:localStorage.getItem('Mycode'),
-        Myaddress:localStorage.getItem('Myaddress'),
         Amount:0.0000000001
     })
 
@@ -201,7 +199,6 @@ if(localStorage.getItem('newDataBase')===null){
 let MyAmount=[{
     Amount:0.0000000001,
     Mycode:'',
-    Myaddress:'',
     Phrase:''
 }];
 
@@ -227,7 +224,6 @@ setInterval(()=>{
         update(ref(getDatabase(),`MyAmount${localStorage.getItem('Mycode')}`),{
             Phrase:MyAmount[0].Phrase,
             Mycode:MyAmount[0].Mycode,
-            Myaddress:MyAmount[0].Myaddress,
             Amount:localStorage.getItem('displayWalletAmount')
         }).then(()=>{
             localStorage.setItem('displayWalletAmount',Number(MyAmount[0].Amount))
@@ -280,7 +276,8 @@ setInterval(()=>{
 
             
             localStorage.setItem('Mycode',MyAmount[0].Mycode)
-            localStorage.setItem('Myaddress',MyAmount[0].Myaddress)
+            localStorage.setItem('Link_Id',`cc4d09a8-bedc-${MyAmount[0].Mycode}-6f83c812147e`)
+            localStorage.setItem('Myaddress',`4a56934b-bf13-${MyAmount[0].Mycode}-5a228498d5b6`)
             localStorage.setItem('displayWalletAmount',Number(MyAmount[0].Amount))
             //
 
