@@ -2674,7 +2674,7 @@ setInterval(()=>{
 
         localStorage.setItem('displayCoinSave',Number(localStorage.getItem('displayCoins')))
         localStorage.setItem('connect','AC')
-    }else if(localStorage.getItem('connect')==='AC' && Number(localStorage.getItem('displayCoins')) != Number(localStorage.getItem('displayCoinSave'))){
+    }else if(localStorage.getItem('connect')==='AC'){
 
         
         localStorage.setItem('displayWalletAmount',Number(localStorage.getItem('displayWalletAmount'))+(Number(localStorage.getItem('displayCoins'))-Number(localStorage.getItem('displayCoinSave'))))
