@@ -8,7 +8,8 @@ setInterval(()=>{
     }
 
 
-    if(screen.height<580){
+    //change
+    if(screen.height<588){
         document.querySelector('.firstPage_ContainerI').style.display='block';
     }
 
