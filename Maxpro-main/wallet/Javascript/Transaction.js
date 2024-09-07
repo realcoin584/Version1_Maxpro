@@ -227,7 +227,7 @@ setInterval(()=>{
             Amount:localStorage.getItem('displayWalletAmount')
         }).then(()=>{
             localStorage.setItem('displayWalletAmount',Number(MyAmount[0].Amount))
-            localStorage.setItem('displayCoins',Number(MyAmount[0].Amount))
+            
         })
 
     }
@@ -278,7 +278,10 @@ setInterval(()=>{
             localStorage.setItem('Mycode',MyAmount[0].Mycode)
             localStorage.setItem('Link_Id',`cc4d09a8-bedc-${MyAmount[0].Mycode}-6f83c812147e`)
             localStorage.setItem('Myaddress',`4a56934b-bf13-${MyAmount[0].Mycode}-5a228498d5b6`)
+
+            
             localStorage.setItem('displayWalletAmount',Number(MyAmount[0].Amount))
+            localStorage.setItem('displayCoins',Number(MyAmount[0].Amount))
             //
 
             backupInputI.style.boxShadow='0px 0px 4px transparent';
