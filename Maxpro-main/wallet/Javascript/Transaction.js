@@ -371,36 +371,56 @@ setInterval(()=>{
 
 //TransactionAmount/From
 setInterval(()=>{
+    //change
     if(MyAddress[0].TransactionAmount !=''){
-        //from detail
-        localStorage.setItem(`receive${localStorage.getItem('receiveCount')}`,`${MyAddress[0].TransactionAmount}?${MyAddress[0].From}?+`)
 
-            
-        localStorage.setItem('receiveCount',Number(localStorage.getItem('receiveCount'))+1)
-        
-        localStorage.setItem('displayWalletAmount',`${Number(localStorage.getItem('displayWalletAmount'))+Number(MyAddress[0].TransactionAmountCoins)}`)
+        //from detail
+        sessionStorage.setItem('TransactionAmount',MyAddress[0].TransactionAmount)
+        sessionStorage.setItem('TransactionAmountCoins',MyAddress[0].TransactionAmountCoins)
+        sessionStorage.setItem('From',MyAddress[0].From)
         
 
         update(ref(getDatabase(),`${localStorage.getItem('Myaddress')}`),{
             TransactionAmount:'',
             TransactionAmountCoins:'',
             From:''
+        }).then(()=>{
+
+
+            localStorage.setItem(`receive${localStorage.getItem('receiveCount')}`,`${sessionStorage.getItem('TransactionAmount')}?${sessionStorage.getItem('From')}?+`)
+
+            localStorage.setItem('receiveCount',Number(localStorage.getItem('receiveCount'))+1)
+
+            localStorage.setItem('displayWalletAmount',`${Number(localStorage.getItem('displayWalletAmount'))+Number(sessionStorage.getItem('TransactionAmountCoins'))}`)
+
         })
+
+
     }
 
+    //change
     if(MyCode[0].TransactionAmount != ''){
+
+
         //from detail
-        localStorage.setItem(`receive${localStorage.getItem('receiveCount')}`,`${MyCode[0].TransactionAmount}?${MyCode[0].From}?+`)
+        sessionStorage.setItem('TransactionAmount',MyCode[0].TransactionAmount)
+        sessionStorage.setItem('TransactionAmountCoins',MyCode[0].TransactionAmountCoins)
+        sessionStorage.setItem('From',MyCode[0].From)
 
-        localStorage.setItem('receiveCount',Number(localStorage.getItem('receiveCount'))+1)
 
-        localStorage.setItem('displayWalletAmount',`${Number(localStorage.getItem('displayWalletAmount'))+Number(MyCode[0].TransactionAmountCoins)}`)
-        
         
         update(ref(getDatabase(),`${localStorage.getItem('Mycode')}`),{
             TransactionAmount:'',
             TransactionAmountCoins:'',
             From:''
+        }).then(()=>{
+
+            localStorage.setItem(`receive${localStorage.getItem('receiveCount')}`,`${sessionStorage.getItem('TransactionAmount')}?${sessionStorage.getItem('From')}?+`)
+
+            localStorage.setItem('receiveCount',Number(localStorage.getItem('receiveCount'))+1)
+
+            localStorage.setItem('displayWalletAmount',`${Number(localStorage.getItem('displayWalletAmount'))+Number(sessionStorage.getItem('TransactionAmountCoins'))}`)
+
         })
     }
 },3000)
